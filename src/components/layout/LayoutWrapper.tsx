@@ -5,10 +5,8 @@ import MainContent from "@/components/layout/MainContent";
 export default function LayoutWrapper() {
   return (
     <div className="flex flex-col lg:flex-row gap-[10px] h-screen overflow-hidden">
-      {/* Sidebar - hidden on mobile, visible as overlay on md, fixed on lg */}
-      <div className="hidden lg:block">
-        <SideBar />
-      </div>
+      {/* Sidebar */}
+      <SideBar />
 
       {/* Main Content Area */}
       <main className="flex-1 flex flex-col min-w-0 p-2 lg:p-0">
