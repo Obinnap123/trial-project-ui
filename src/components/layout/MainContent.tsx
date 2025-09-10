@@ -13,7 +13,7 @@ export default function MainContent() {
             <div className="w-[400px] text-[12px] font-medium text-gray-700">Data</div>
 
             {/* Center - aligned with bio text */}
-            <div className="flex-1 flex items-center justify-end gap-4 pr-16">
+            <div className="flex-1 flex items-center xl:justify-start justify-end gap-4 pr-16 xl:pl-2">
               <span className="text-[12px] font-medium text-gray-700 w-[90px] text-center">Tag</span>
               <span className="text-[12px] font-medium text-gray-700 w-[60px] text-center">Data</span>
               <span className="text-[12px] font-medium text-gray-700 w-[60px] text-center">Data</span>
@@ -89,9 +89,9 @@ export default function MainContent() {
             </div>
 
             {/* Desktop: Aligned items with header */}
-            <div className="hidden lg:flex flex-1 items-center justify-end gap-4 pr-16">
+            <div className="hidden lg:flex flex-1 items-center xl:justify-start justify-end gap-4 pr-16">
               <div className="w-[90px] flex justify-center">
-                <span className="px-4 py-1 text-xs rounded-full bg-gradient-to-r from-[#eed7e9] to-[#d7e0ee] text-gray-700 font-medium whitespace-nowrap">
+                <span className="px-4 xl:px-6 py-1 text-xs rounded-full bg-gradient-to-r from-[#eed7e9] to-[#d7e0ee] text-gray-700 font-medium whitespace-nowrap">
                   Data
                 </span>
               </div>
@@ -203,9 +203,9 @@ export default function MainContent() {
                 </div>
 
                 {/* Desktop: Aligned items with header */}
-                <div className="hidden lg:flex flex-1 items-center justify-end gap-4 pr-16">
+                <div className="hidden lg:flex flex-1 items-center xl:justify-start justify-end gap-4 pr-16 ">
                   <div className="w-[90px] flex justify-center">
-                    <span className="px-4 py-1 text-xs rounded-full bg-gradient-to-r from-[#eed7e9] to-[#d7e0ee] text-gray-700 font-medium whitespace-nowrap">
+                    <span className="px-4 xl:px-6 py-1 text-xs rounded-full bg-gradient-to-r from-[#eed7e9] to-[#d7e0ee] text-gray-700 font-medium whitespace-nowrap">
                       Data
                     </span>
                   </div>
