@@ -48,29 +48,48 @@ export default function SideBar() {
             <path d="M18 6L6 18M6 6L18 18" stroke="black" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
           </svg>
         </button>
+
+        {/* Mobile Dashboard Title */}
+        <div className="lg:hidden pt-14 px-5 pb-4">
+          <div className="flex items-center gap-3">
+            <div className="w-4 h-4 flex items-center justify-center">
+              <Image
+                src="/Category.svg"
+                alt="Dashboard"
+                width={16}
+                height={16}
+              />
+            </div>
+            <span className="font-semibold text-[15px] text-gray-900">Dashboard</span>
+          </div>
+        </div>
         
-        <nav className="pt-16 lg:pt-[10px] pb-[10px] space-y-4 px-5">
+        <nav className="py-[10px] space-y-4 px-5 lg:space-y-0">
           {navigationItems.map((item) => (
             <a
-              key={item.name}
-              href="#"
-              className="flex items-center gap-3 py-3 text-gray-700 hover:bg-gray-50 group"
-              onClick={() => {
-                if (window.innerWidth < 1024) { // Close menu on mobile when item is clicked
-                  close();
-                }
-              }}
-            >
-              <div className="w-4 h-4 flex items-center justify-center">
-                <Image
-                  src={item.icon}
-                  alt={item.name}
-                  width={16}
-                  height={16}
-                />
-              </div>
-              <span className="font-medium text-[13px]">{item.name}</span>
-            </a>
+                key={item.name}
+                href="#"
+                className={`
+                  flex items-center gap-3 text-gray-700 hover:bg-gray-50 group py-3
+                  ${item.name === 'Dashboard' ? 'lg:flex hidden' : ''}
+                  lg:py-0 lg:min-h-[52px] lg:border-b lg:border-gray-200
+                `}
+                onClick={() => {
+                  if (window.innerWidth < 1024) { // Close menu on mobile when item is clicked
+                    close();
+                  }
+                }}
+              >
+                <div className="w-4 h-4 flex items-center justify-center">
+                  <Image
+                    src={item.icon}
+                    alt={item.name}
+                    width={16}
+                    height={16}
+                  />
+                </div>
+                <span className="font-medium text-[13px]">{item.name}</span>
+              </a>
           ))}
         </nav>
       </aside>

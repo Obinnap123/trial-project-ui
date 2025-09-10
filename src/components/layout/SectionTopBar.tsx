@@ -1,15 +1,15 @@
 export default function SectionTopBar() {
   return (
-    <div className="px-3 sm:px-6 py-3 flex flex-col sm:flex-row gap-3 sm:gap-0 sm:justify-between sm:items-center">
-      <h1 className="text-[16px] font-semibold text-black">Moderators</h1>
+    <div className="px-4 lg:px-6 py-3 flex justify-between items-center">
+      <h1 className="text-[15px] lg:text-[16px] font-semibold text-black">Moderators</h1>
       <button 
-        className="px-[15px] sm:px-[25px] py-[10px] flex items-center justify-center sm:justify-start gap-[5px] text-white rounded-[50px] w-full sm:w-auto"
+        className="px-3 lg:px-[25px] py-2 lg:py-[10px] flex items-center justify-center gap-[5px] text-white rounded-[50px]"
         style={{ 
           background: 'linear-gradient(to right, rgba(66, 133, 244, 1), rgba(210, 9, 163, 1))'
         }}
       >
-        <span>+</span>
-        <span className="font-semibold text-[14px]">Add members</span>
+        <span className="text-[15px] lg:text-base">+</span>
+        <span className="font-semibold text-[13px] lg:text-[14px]">Add members</span>
       </button>
     </div>
   );
