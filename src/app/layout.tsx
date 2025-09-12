@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import "../styles/scrollbar-hide.css";
+
 import TopBar from "../components/layout/TopBar";
 import { MobileMenuProvider } from "@/context/MobileMenuContext";
 
@@ -20,14 +20,11 @@ export default function RootLayout({
         className="antialiased"
       >
         <MobileMenuProvider>
-          <div className="flex flex-col h-screen lg:p-4 space-y-[10px] overflow-hidden">
-            {/* Top bar in its own white container */}
+          <div className="flex flex-col h-screen lg:p-4 space-y-[10px]">
             <div className="bg-white lg:rounded-[30px]">
               <TopBar />
             </div>
-            
-            {/* Dashboard content container */}
-            <div className="flex-1 min-h-0">
+            <div className="flex-1 min-h-0 overflow-auto">
               {children}
             </div>
           </div>

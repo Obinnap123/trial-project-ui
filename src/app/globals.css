@@ -34,4 +34,15 @@ body {
   background-color: #F8F8F8 !important;
   color: var(--foreground);
   font-family: 'Mori', sans-serif;
+  overflow: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+  background: transparent;
+}
+
+* {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }

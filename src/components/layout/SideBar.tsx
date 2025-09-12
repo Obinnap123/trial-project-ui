@@ -31,7 +31,7 @@ export default function SideBar() {
         inset-y-0 left-0 
         w-[232px] h-full 
         border border-gray-200 
-        lg:rounded-t-[30px] 
+        lg:rounded-[30px]
         bg-white 
         overflow-y-auto
         z-50
@@ -60,7 +60,7 @@ export default function SideBar() {
                 height={16}
               />
             </div>
-            <span className="font-semibold text-[15px] text-gray-900">Dashboard</span>
+            <span className="text-[15px] text-gray-900">Dashboard</span>
           </div>
         </div>
         
